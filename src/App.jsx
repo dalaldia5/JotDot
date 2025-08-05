@@ -68,7 +68,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto my-3 rounded-md p-3 bg-violet-100 min-h-[80vh] w-1/2">
+      <div className="mx-2 md:container md:mx-auto my-3 rounded-md p-3 bg-violet-100 min-h-[100vh] md:w-1/2">
         <h1 className="font-bold text-center text-xl">
           JotDot - Quick Notes. Faster Tasks.
         </h1>
@@ -87,7 +87,8 @@ function App() {
             Save
           </button>
         </div>
-        <input className="my-4"
+        <input
+          className="my-4"
           onChange={toggleFinished}
           type="checkbox"
           checked={showFinished}
@@ -103,7 +104,7 @@ function App() {
               (showFinished || !item.isCompleted) && (
                 <div
                   key={item.id}
-                  className="todo flex w-full justify-between items-center mb-2"
+                  className="todo flex md:w-3/4 justify-between items-center my-2"
                 >
                   <div className="flex gap-5 items-center">
                     <input
